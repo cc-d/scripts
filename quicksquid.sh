@@ -3,9 +3,9 @@
 # MAKE SURE TO STOP SQUID AFTER FINISHED USING
 # Use IP of server and port 11337
 
-apt-get update
-apt-get upgrade
-apt-get install squid
+apt-get update -y
+apt-get upgrade -y
+apt-get install squid -y
 
 cp /etc/squid/squid.conf{,.old} && \
 cat > /etc/squid/squid.conf <<EOF
